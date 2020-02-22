@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Teams = mongoose.model('Teams');
 //const logger = require('../modules/logger/logger');
-const Teamservice = require('../services/Teamservice');
+const Teamservice = require('../services/teamService');
 
 class TeamsController {
    static async getAll(req, res, err) {
