@@ -1,0 +1,17 @@
+[
+   {
+      "id": 1,
+      "username": "User1",
+      "msg": "std"
+   },
+   {
+      "id": 2,
+      "username": "admin",
+      "msg": "adm"
+   },
+   {
+      "id": 3,
+      "username": "Rafal C",
+      "msg": "dev"
+   }
+]

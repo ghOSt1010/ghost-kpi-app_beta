@@ -1,0 +1,9 @@
+MongoDB shell version v4.2.1
+connecting to: mongodb://127.0.0.1:27017/admin?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("da3d1083-09c9-4e6f-a0ca-dcf9338a1b10") }
+MongoDB server version: 4.2.1
+2020-01-16T21:52:07.668+0100 I  NETWORK  [js] DBClientConnection failed to receive message from 127.0.0.1:27017 - HostUnreachable: Connection closed by peer
+server should be down...
+2020-01-16T21:52:07.678+0100 I  NETWORK  [js] trying reconnect to 127.0.0.1:27017 failed
+2020-01-16T21:52:07.679+0100 I  NETWORK  [js] reconnect 127.0.0.1:27017 failed failed 
+2020-01-16T21:52:07.679+0100 I  QUERY    [js] Failed to end session { id: UUID("da3d1083-09c9-4e6f-a0ca-dcf9338a1b10") } due to SocketException: socket exception [CONNECT_ERROR] server [couldn't connect to server 127.0.0.1:27017, connection attempt failed: SocketException: Error connecting to 127.0.0.1:27017 :: caused by :: Connection refused]

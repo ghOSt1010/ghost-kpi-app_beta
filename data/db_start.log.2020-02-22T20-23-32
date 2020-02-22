@@ -1,0 +1,113 @@
+2020-02-22T20:11:06.419+0100 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] MongoDB starting : pid=1393 port=27017 dbpath=/Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/ 64-bit host=GhOSt-RC.local
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] db version v4.2.1
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] allocator: system
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] modules: none
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] build environment:
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-22T20:11:06.463+0100 I  CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "data/db/" }, systemLog: { destination: "file", path: "./data/db_start.log", quiet: true } }
+2020-02-22T20:11:06.466+0100 I  STORAGE  [initandlisten] Detected data files in /Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-02-22T20:11:06.466+0100 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-02-22T20:11:07.177+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:177824][1393:0x114630dc0], txn-recover: Recovering log 263 through 264
+2020-02-22T20:11:07.272+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:272488][1393:0x114630dc0], txn-recover: Recovering log 264 through 264
+2020-02-22T20:11:07.377+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:377821][1393:0x114630dc0], txn-recover: Main recovery loop: starting at 263/2048 to 264/256
+2020-02-22T20:11:07.491+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:491892][1393:0x114630dc0], txn-recover: Recovering log 263 through 264
+2020-02-22T20:11:07.567+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:567574][1393:0x114630dc0], txn-recover: Recovering log 264 through 264
+2020-02-22T20:11:07.630+0100 I  STORAGE  [initandlisten] WiredTiger message [1582398667:630541][1393:0x114630dc0], txn-recover: Set global recovery timestamp: (0,0)
+2020-02-22T20:11:07.777+0100 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-02-22T20:11:07.821+0100 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-02-22T20:11:07.822+0100 I  CONTROL  [initandlisten] 
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] 
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-02-22T20:11:07.823+0100 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-02-22T20:11:07.824+0100 I  CONTROL  [initandlisten] 
+2020-02-22T20:11:07.860+0100 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-02-22T20:11:07.869+0100 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-02-22T20:11:07.871+0100 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-02-22T20:11:07.872+0100 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-02-22T20:11:07.878+0100 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-02-22T20:11:07.879+0100 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/diagnostic.data'
+2020-02-22T20:11:07.892+0100 I  NETWORK  [initandlisten] Listening on /tmp/mongodb-27017.sock
+2020-02-22T20:11:07.892+0100 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2020-02-22T20:11:07.893+0100 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2020-02-22T20:11:07.893+0100 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2020-02-22T20:11:07.894+0100 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2020-02-22T20:11:08.014+0100 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-02-22T20:11:11.811+0100 I  NETWORK  [conn1] received client metadata from 127.0.0.1:49798 conn1: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:11:11.838+0100 I  NETWORK  [conn2] received client metadata from 127.0.0.1:49799 conn2: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:11:11.845+0100 I  NETWORK  [conn3] received client metadata from 127.0.0.1:49800 conn3: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:11:11.856+0100 I  NETWORK  [conn4] received client metadata from 127.0.0.1:49801 conn4: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:17:16.258+0100 I  SHARDING [conn2] Marking collection ghost_kpi_app.users as collection version: <unsharded>
+2020-02-22T20:17:17.989+0100 I  SHARDING [conn3] Marking collection ghost_kpi_app.projects as collection version: <unsharded>
+2020-02-22T20:17:17.999+0100 I  SHARDING [conn4] Marking collection ghost_kpi_app.employees as collection version: <unsharded>
+2020-02-22T20:17:18.013+0100 I  SHARDING [conn1] Marking collection ghost_kpi_app.teams as collection version: <unsharded>
+2020-02-22T20:17:18.014+0100 I  SHARDING [conn2] Marking collection ghost_kpi_app.employeestypes as collection version: <unsharded>
+2020-02-22T20:17:20.574+0100 I  SHARDING [conn3] Marking collection ghost_kpi_app.kpis as collection version: <unsharded>
+2020-02-22T20:17:20.581+0100 I  SHARDING [conn3] Marking collection ghost_kpi_app.reports as collection version: <unsharded>
+2020-02-22T20:17:26.910+0100 I  NETWORK  [conn5] received client metadata from 127.0.0.1:49994 conn5: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:09.408+0100 I  NETWORK  [conn6] received client metadata from 127.0.0.1:50169 conn6: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:09.429+0100 I  NETWORK  [conn7] received client metadata from 127.0.0.1:50170 conn7: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:09.433+0100 I  NETWORK  [conn8] received client metadata from 127.0.0.1:50171 conn8: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:09.438+0100 I  NETWORK  [conn9] received client metadata from 127.0.0.1:50172 conn9: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:48.003+0100 I  NETWORK  [conn10] received client metadata from 127.0.0.1:50180 conn10: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:48.028+0100 I  NETWORK  [conn11] received client metadata from 127.0.0.1:50181 conn11: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:48.032+0100 I  NETWORK  [conn12] received client metadata from 127.0.0.1:50182 conn12: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:24:48.036+0100 I  NETWORK  [conn13] received client metadata from 127.0.0.1:50183 conn13: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:42.497+0100 I  NETWORK  [conn14] received client metadata from 127.0.0.1:50238 conn14: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:42.514+0100 I  NETWORK  [conn15] received client metadata from 127.0.0.1:50239 conn15: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:42.517+0100 I  NETWORK  [conn16] received client metadata from 127.0.0.1:50240 conn16: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:42.521+0100 I  NETWORK  [conn17] received client metadata from 127.0.0.1:50241 conn17: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:56.957+0100 I  NETWORK  [conn18] received client metadata from 127.0.0.1:50248 conn18: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:56.978+0100 I  NETWORK  [conn19] received client metadata from 127.0.0.1:50249 conn19: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:56.981+0100 I  NETWORK  [conn20] received client metadata from 127.0.0.1:50250 conn20: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:27:56.985+0100 I  NETWORK  [conn21] received client metadata from 127.0.0.1:50251 conn21: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:30:06.040+0100 I  NETWORK  [conn22] received client metadata from 127.0.0.1:50593 conn22: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:30:06.058+0100 I  NETWORK  [conn23] received client metadata from 127.0.0.1:50594 conn23: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:30:06.061+0100 I  NETWORK  [conn24] received client metadata from 127.0.0.1:50595 conn24: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:30:06.064+0100 I  NETWORK  [conn25] received client metadata from 127.0.0.1:50596 conn25: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:40:02.233+0100 I  NETWORK  [conn26] received client metadata from 127.0.0.1:53228 conn26: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:40:02.253+0100 I  NETWORK  [conn27] received client metadata from 127.0.0.1:53229 conn27: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:40:02.257+0100 I  NETWORK  [conn28] received client metadata from 127.0.0.1:53230 conn28: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:40:02.262+0100 I  NETWORK  [conn29] received client metadata from 127.0.0.1:53231 conn29: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:41:37.571+0100 I  NETWORK  [conn30] received client metadata from 127.0.0.1:53646 conn30: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:41:37.595+0100 I  NETWORK  [conn31] received client metadata from 127.0.0.1:53647 conn31: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:41:37.603+0100 I  NETWORK  [conn32] received client metadata from 127.0.0.1:53648 conn32: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:41:37.609+0100 I  NETWORK  [conn33] received client metadata from 127.0.0.1:53649 conn33: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:42:27.226+0100 I  NETWORK  [conn34] received client metadata from 127.0.0.1:53902 conn34: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:49:42.682+0100 I  NETWORK  [conn35] received client metadata from 127.0.0.1:55137 conn35: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:49:42.702+0100 I  NETWORK  [conn36] received client metadata from 127.0.0.1:55138 conn36: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:49:42.707+0100 I  NETWORK  [conn37] received client metadata from 127.0.0.1:55139 conn37: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:49:42.715+0100 I  NETWORK  [conn38] received client metadata from 127.0.0.1:55140 conn38: { driver: { name: "nodejs|Mongoose", version: "3.4.1|5.8.3" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "'Node.js v12.13.1, LE (unified)" }
+2020-02-22T20:49:51.622+0100 I  CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2020-02-22T20:49:51.657+0100 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-02-22T20:49:51.659+0100 I  NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2020-02-22T20:49:51.660+0100 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2020-02-22T20:49:51.662+0100 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2020-02-22T20:49:51.662+0100 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-02-22T20:49:51.668+0100 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2020-02-22T20:49:51.670+0100 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2020-02-22T20:49:51.671+0100 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-02-22T20:49:51.671+0100 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2020-02-22T20:49:51.672+0100 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2020-02-22T20:49:51.672+0100 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2020-02-22T20:49:51.723+0100 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2020-02-22T20:49:51.723+0100 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2020-02-22T20:49:51.723+0100 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2020-02-22T20:49:51.723+0100 I  STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2020-02-22T20:49:52.012+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:12329][1393:0x70000ee97000], txn-recover: Recovering log 264 through 265
+2020-02-22T20:49:52.077+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:77383][1393:0x70000ee97000], txn-recover: Recovering log 265 through 265
+2020-02-22T20:49:52.154+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:154530][1393:0x70000ee97000], txn-recover: Main recovery loop: starting at 264/59008 to 265/256
+2020-02-22T20:49:52.263+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:263510][1393:0x70000ee97000], txn-recover: Recovering log 264 through 265
+2020-02-22T20:49:52.337+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:337433][1393:0x70000ee97000], txn-recover: Recovering log 265 through 265
+2020-02-22T20:49:52.403+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582400992:403866][1393:0x70000ee97000], txn-recover: Set global recovery timestamp: (0,0)
+2020-02-22T20:49:52.698+0100 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-02-22T20:49:52.701+0100 I  CONTROL  [signalProcessingThread] now exiting
+2020-02-22T20:49:52.701+0100 I  CONTROL  [signalProcessingThread] shutting down with code:0

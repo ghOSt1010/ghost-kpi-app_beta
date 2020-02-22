@@ -1,0 +1,126 @@
+2020-02-22T21:23:32.188+0100 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-02-22T21:23:32.210+0100 I  CONTROL  [initandlisten] MongoDB starting : pid=5352 port=27017 dbpath=/Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/ 64-bit host=GhOSt-RC.local
+2020-02-22T21:23:32.212+0100 I  CONTROL  [initandlisten] db version v4.2.1
+2020-02-22T21:23:32.214+0100 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2020-02-22T21:23:32.215+0100 I  CONTROL  [initandlisten] allocator: system
+2020-02-22T21:23:32.217+0100 I  CONTROL  [initandlisten] modules: none
+2020-02-22T21:23:32.218+0100 I  CONTROL  [initandlisten] build environment:
+2020-02-22T21:23:32.220+0100 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-02-22T21:23:32.221+0100 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-22T21:23:32.222+0100 I  CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "data/db/" }, systemLog: { destination: "file", path: "./data/db_start.log", quiet: true } }
+2020-02-22T21:23:32.226+0100 I  STORAGE  [initandlisten] Detected data files in /Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2020-02-22T21:23:32.228+0100 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3584M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-02-22T21:23:32.936+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403012:936317][5352:0x106402dc0], txn-recover: Recovering log 265 through 266
+2020-02-22T21:23:33.038+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403013:38641][5352:0x106402dc0], txn-recover: Recovering log 266 through 266
+2020-02-22T21:23:33.174+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403013:174732][5352:0x106402dc0], txn-recover: Main recovery loop: starting at 265/2048 to 266/256
+2020-02-22T21:23:33.287+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403013:287120][5352:0x106402dc0], txn-recover: Recovering log 265 through 266
+2020-02-22T21:23:33.368+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403013:368130][5352:0x106402dc0], txn-recover: Recovering log 266 through 266
+2020-02-22T21:23:33.432+0100 I  STORAGE  [initandlisten] WiredTiger message [1582403013:432085][5352:0x106402dc0], txn-recover: Set global recovery timestamp: (0,0)
+2020-02-22T21:23:33.603+0100 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-02-22T21:23:33.630+0100 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-02-22T21:23:33.632+0100 I  CONTROL  [initandlisten] 
+2020-02-22T21:23:33.634+0100 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-22T21:23:33.635+0100 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-22T21:23:33.636+0100 I  CONTROL  [initandlisten] 
+2020-02-22T21:23:33.638+0100 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-02-22T21:23:33.639+0100 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2020-02-22T21:23:33.641+0100 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2020-02-22T21:23:33.642+0100 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-02-22T21:23:33.643+0100 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-02-22T21:23:33.644+0100 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-02-22T21:23:33.646+0100 I  CONTROL  [initandlisten] 
+2020-02-22T21:23:33.647+0100 I  CONTROL  [initandlisten] 
+2020-02-22T21:23:33.649+0100 I  CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+2020-02-22T21:23:33.673+0100 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-02-22T21:23:33.683+0100 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-02-22T21:23:33.686+0100 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-02-22T21:23:33.688+0100 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-02-22T21:23:33.697+0100 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-02-22T21:23:33.698+0100 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/Users/rafalcymbalista/Projects/GhOSt_KPI/server/data/db/diagnostic.data'
+2020-02-22T21:23:33.701+0100 I  NETWORK  [initandlisten] Listening on /tmp/mongodb-27017.sock
+2020-02-22T21:23:33.702+0100 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2020-02-22T21:23:33.703+0100 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2020-02-22T21:23:33.705+0100 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2020-02-22T21:23:33.706+0100 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2020-02-22T21:23:34.012+0100 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-02-22T21:23:43.902+0100 I  NETWORK  [conn1] received client metadata from 127.0.0.1:56594 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "19.3.0" } }
+2020-02-22T21:32:22.151+0100 I  NETWORK  [conn2] received client metadata from 127.0.0.1:56734 conn2: { driver: { name: "nodejs", version: "3.1.9" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.1.8" }
+2020-02-22T21:32:41.775+0100 I  COMMAND  [conn4] dropDatabase ghostapp - starting
+2020-02-22T21:32:41.776+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.appInfo
+2020-02-22T21:32:41.777+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.users
+2020-02-22T21:32:41.779+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.employeestypes
+2020-02-22T21:32:41.779+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.projects
+2020-02-22T21:32:41.780+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.teams
+2020-02-22T21:32:41.781+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropping collection: ghostapp.employees
+2020-02-22T21:32:42.165+0100 I  COMMAND  [conn4] dropDatabase ghostapp - dropped 6 collection(s)
+2020-02-22T21:32:42.167+0100 I  COMMAND  [conn4] dropDatabase ghostapp - finished
+2020-02-22T21:32:42.172+0100 I  COMMAND  [conn4] command ghostapp command: dropDatabase { dropDatabase: 1, lsid: { id: UUID("82520fd9-67d6-4d87-92e0-beadbf6f91c4") }, $db: "ghostapp" } numYields:0 reslen:75 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { w: 1, W: 1 } }, Database: { acquireCount: { W: 1 } }, Mutex: { acquireCount: { r: 1 } } } storage:{} protocol:op_query 396ms
+2020-02-22T21:32:47.559+0100 I  SHARDING [conn5] Marking collection ghost_kpi_db.info as collection version: <unsharded>
+2020-02-22T21:32:47.561+0100 I  SHARDING [conn6] Marking collection ghost_kpi_db.users as collection version: <unsharded>
+2020-02-22T21:32:50.173+0100 I  SHARDING [conn2] Marking collection ghost_kpi_app.projects as collection version: <unsharded>
+2020-02-22T21:32:50.174+0100 I  SHARDING [conn5] Marking collection ghost_kpi_app.teams as collection version: <unsharded>
+2020-02-22T21:32:50.176+0100 I  SHARDING [conn4] Marking collection ghost_kpi_app.employees as collection version: <unsharded>
+2020-02-22T21:32:50.178+0100 I  SHARDING [conn6] Marking collection ghost_kpi_app.kpis as collection version: <unsharded>
+2020-02-22T21:32:50.190+0100 I  SHARDING [conn6] Marking collection ghost_kpi_app.users as collection version: <unsharded>
+2020-02-22T21:32:50.197+0100 I  SHARDING [conn5] Marking collection ghost_kpi_app.reports as collection version: <unsharded>
+2020-02-22T21:32:50.212+0100 I  SHARDING [conn4] Marking collection ghost_kpi_app.employeestypes as collection version: <unsharded>
+2020-02-22T21:32:59.604+0100 I  COMMAND  [conn2] dropDatabase ghost_kpi_db - starting
+2020-02-22T21:32:59.605+0100 I  COMMAND  [conn2] dropDatabase ghost_kpi_db - dropping collection: ghost_kpi_db.users
+2020-02-22T21:32:59.606+0100 I  COMMAND  [conn2] dropDatabase ghost_kpi_db - dropping collection: ghost_kpi_db.info
+2020-02-22T21:32:59.667+0100 I  COMMAND  [conn2] dropDatabase ghost_kpi_db - dropped 2 collection(s)
+2020-02-22T21:32:59.668+0100 I  COMMAND  [conn2] dropDatabase ghost_kpi_db - finished
+2020-02-22T21:36:50.850+0100 I  NETWORK  [conn7] received client metadata from 127.0.0.1:56844 conn7: { driver: { name: "nodejs", version: "3.1.9" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.1.8" }
+2020-02-22T21:41:29.469+0100 I  NETWORK  [conn12] received client metadata from 127.0.0.1:56896 conn12: { driver: { name: "nodejs", version: "3.1.9" }, os: { type: "Darwin", name: "darwin", architecture: "x64", version: "19.3.0" }, platform: "Node.js v8.9.3, LE, mongodb-core: 3.1.8" }
+2020-02-22T21:45:35.027+0100 I  NETWORK  [conn17] received client metadata from 127.0.0.1:56944 conn17: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9" }
+2020-02-22T21:45:35.031+0100 I  NETWORK  [conn18] received client metadata from 127.0.0.1:56946 conn18: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T21:45:35.036+0100 I  SHARDING [conn18] Marking collection admin.system.users as collection version: <unsharded>
+2020-02-22T21:45:35.062+0100 I  NETWORK  [conn19] received client metadata from 127.0.0.1:56950 conn19: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T21:45:35.063+0100 I  NETWORK  [conn20] received client metadata from 127.0.0.1:56951 conn20: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T21:45:35.063+0100 I  NETWORK  [conn21] received client metadata from 127.0.0.1:56952 conn21: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T22:03:11.667+0100 I  NETWORK  [conn22] received client metadata from 127.0.0.1:57164 conn22: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "19.3.0" } }
+2020-02-22T22:03:11.676+0100 I  COMMAND  [conn22] CMD fsync: sync:1 lock:1
+2020-02-22T22:03:11.761+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:03:11.765+0100 I  COMMAND  [conn22] mongod is locked and no writes are allowed. db.fsyncUnlock() to unlock
+2020-02-22T22:03:11.767+0100 I  COMMAND  [conn22] Lock count is 1
+2020-02-22T22:03:11.769+0100 I  COMMAND  [conn22]     For more info see http://dochub.mongodb.org/core/fsynccommand
+2020-02-22T22:03:40.581+0100 I  NETWORK  [conn23] received client metadata from 127.0.0.1:57172 conn23: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9" }
+2020-02-22T22:03:40.586+0100 I  NETWORK  [conn24] received client metadata from 127.0.0.1:57174 conn24: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T22:03:40.606+0100 I  NETWORK  [conn25] received client metadata from 127.0.0.1:57178 conn25: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T22:03:40.606+0100 I  NETWORK  [conn26] received client metadata from 127.0.0.1:57179 conn26: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T22:03:40.606+0100 I  NETWORK  [conn27] received client metadata from 127.0.0.1:57180 conn27: { driver: { name: "mongo-go-driver", version: "v1.1.2" }, os: { type: "darwin", architecture: "amd64" }, platform: "go1.12.9", application: { name: "mongodump" } }
+2020-02-22T22:04:11.770+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:05:11.777+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:06:11.784+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:07:11.792+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:08:11.800+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:09:11.806+0100 W  COMMAND  [fsyncLockWorker] WARNING: instance is locked, blocking all writes. The fsync command has finished execution, remember to unlock the instance using fsyncUnlock().
+2020-02-22T22:09:12.164+0100 I  NETWORK  [conn28] received client metadata from 127.0.0.1:57250 conn28: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Darwin", name: "Mac OS X", architecture: "x86_64", version: "19.3.0" } }
+2020-02-22T22:09:12.182+0100 I  COMMAND  [conn28] command: unlock requested
+2020-02-22T22:09:12.186+0100 I  COMMAND  [conn28] fsyncUnlock completed. mongod is now unlocked and free to accept writes
+2020-02-22T22:09:12.186+0100 I  WRITE    [LogicalSessionCacheRefresh] remove config.system.sessions command: { q: { _id: { id: UUID("78fc77e8-eb0c-484d-99a9-58c1064289d9"), uid: BinData(0, E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) } }, limit: 0 } planSummary: IDHACK keysExamined:0 docsExamined:0 ndeleted:0 numYields:0 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 1 } }, ReplicationStateTransition: { acquireCount: { w: 1 } }, Global: { acquireCount: { w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 338336900 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 1 } storage:{} 338337ms
+2020-02-22T22:09:12.191+0100 I  COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: delete { delete: "system.sessions", ordered: false, writeConcern: { w: "majority", wtimeout: 15000 }, $db: "config" } numYields:0 reslen:45 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 2 } }, Global: { acquireCount: { r: 1, w: 1 }, acquireWaitCount: { w: 1 }, timeAcquiringMicros: { w: 338336900 } }, Database: { acquireCount: { w: 1 } }, Collection: { acquireCount: { w: 1 } }, Mutex: { acquireCount: { r: 1 } } } flowControl:{ acquireCount: 1 } storage:{} protocol:op_msg 338341ms
+2020-02-22T22:10:17.567+0100 I  CONTROL  [signalProcessingThread] got signal 15 (Terminated: 15), will terminate after current cmd ends
+2020-02-22T22:10:17.573+0100 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2020-02-22T22:10:17.575+0100 I  NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2020-02-22T22:10:17.576+0100 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2020-02-22T22:10:17.579+0100 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2020-02-22T22:10:17.580+0100 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2020-02-22T22:10:17.586+0100 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2020-02-22T22:10:17.589+0100 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2020-02-22T22:10:17.590+0100 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2020-02-22T22:10:17.591+0100 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2020-02-22T22:10:17.592+0100 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2020-02-22T22:10:17.592+0100 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2020-02-22T22:10:17.656+0100 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2020-02-22T22:10:17.658+0100 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2020-02-22T22:10:17.660+0100 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2020-02-22T22:10:17.662+0100 I  STORAGE  [signalProcessingThread] Downgrading WiredTiger datafiles.
+2020-02-22T22:10:17.916+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405817:916676][5352:0x7000059d8000], txn-recover: Recovering log 267 through 268
+2020-02-22T22:10:18.065+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405818:65485][5352:0x7000059d8000], txn-recover: Recovering log 268 through 268
+2020-02-22T22:10:18.223+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405818:223020][5352:0x7000059d8000], txn-recover: Main recovery loop: starting at 267/4608 to 268/256
+2020-02-22T22:10:18.336+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405818:336776][5352:0x7000059d8000], txn-recover: Recovering log 267 through 268
+2020-02-22T22:10:18.419+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405818:419067][5352:0x7000059d8000], txn-recover: Recovering log 268 through 268
+2020-02-22T22:10:18.496+0100 I  STORAGE  [signalProcessingThread] WiredTiger message [1582405818:496253][5352:0x7000059d8000], txn-recover: Set global recovery timestamp: (0,0)
+2020-02-22T22:10:18.767+0100 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2020-02-22T22:10:18.770+0100 I  CONTROL  [signalProcessingThread] now exiting
+2020-02-22T22:10:18.774+0100 I  CONTROL  [signalProcessingThread] shutting down with code:0
