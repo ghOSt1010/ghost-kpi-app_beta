@@ -15,6 +15,9 @@ router.get('/', function(req, res, next) {
     */
    res.sendFile(path.join(__dirname + '/../views/app/index.html'));
 });
+router.get('/login', function(req, res, next) {
+   res.redirect('/Home');
+});
 
 /* GET API page. */
 router.get('/api', function(req, res, next) {
