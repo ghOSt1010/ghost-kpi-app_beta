@@ -13,6 +13,7 @@ const errors = require('./modules/errors/error');
 
 /**
  *    App logo
+ *
  */
 logger.pringAppLogo();
 
