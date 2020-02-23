@@ -8,20 +8,18 @@ const name = pac.name;
 const auth = pac.author;
 var path = require('path');
 
+/* GET API page. */
+router.get('/api', function(req, res, next) {
+   res.render('index', { title: name, version: ver, author: auth });
+});
+
 router.get('/', function(req, res, next) {
    /**
     *    TODO:
     *       -- get app data + changelog from db
     */
    res.sendFile(path.join(__dirname + '/../views/app/index.html'));
-});
-router.get('/login', function(req, res, next) {
-   res.redirect('/Home');
-});
-
-/* GET API page. */
-router.get('/api', function(req, res, next) {
-   res.render('index', { title: name, version: ver, author: auth });
+   res.end();
 });
 
 /**
@@ -35,7 +33,7 @@ router.get('/favicon.ico', function(req, res, next) {
     *       -- get app data + changelog from db
     */
    res.status(200).send('../public/favicon.ico');
-   res.end();
+   next();
 });
 
 /**
