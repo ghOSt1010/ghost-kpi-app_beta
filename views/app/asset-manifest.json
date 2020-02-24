@@ -1,17 +1,19 @@
 {
-  "main.css": "/static/css/main.71d92172.chunk.css",
-  "main.js": "/static/js/main.f2435ca8.chunk.js",
-  "main.js.map": "/static/js/main.f2435ca8.chunk.js.map",
-  "static/css/1.a5e06e83.chunk.css": "/static/css/1.a5e06e83.chunk.css",
-  "static/js/1.7cd89eac.chunk.js": "/static/js/1.7cd89eac.chunk.js",
-  "static/js/1.7cd89eac.chunk.js.map": "/static/js/1.7cd89eac.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/MainContainer.css": "/static/media/1.86ebde01.jpg",
-  "static/media/all.css": "/static/media/fa-solid-900.7a5de9b0.svg",
-  "static/css/main.71d92172.chunk.css.map": "/static/css/main.71d92172.chunk.css.map",
-  "static/css/1.a5e06e83.chunk.css.map": "/static/css/1.a5e06e83.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.52494f9b0962a5a952be34b1cffe7c31.js": "/precache-manifest.52494f9b0962a5a952be34b1cffe7c31.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.68bf7a4c.chunk.css",
+    "main.js": "/static/js/main.ca5a6d6c.chunk.js",
+    "main.js.map": "/static/js/main.ca5a6d6c.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a7c1a738.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a7c1a738.js.map",
+    "static/css/2.40eaa2f1.chunk.css": "/static/css/2.40eaa2f1.chunk.css",
+    "static/js/2.6d68a93e.chunk.js": "/static/js/2.6d68a93e.chunk.js",
+    "static/js/2.6d68a93e.chunk.js.map": "/static/js/2.6d68a93e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.630939ad2948fce02b351ef76fd3c0b1.js": "/precache-manifest.630939ad2948fce02b351ef76fd3c0b1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.40eaa2f1.chunk.css.map": "/static/css/2.40eaa2f1.chunk.css.map",
+    "static/css/main.68bf7a4c.chunk.css.map": "/static/css/main.68bf7a4c.chunk.css.map",
+    "static/media/MainContainer.css": "/static/media/5.e56b8cbb.jpg",
+    "static/media/all.css": "/static/media/fa-solid-900.f6121be5.woff2"
+  }
 }
