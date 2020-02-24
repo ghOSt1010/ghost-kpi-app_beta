@@ -8,11 +8,6 @@ const name = pac.name;
 const auth = pac.author;
 var path = require('path');
 
-/* GET API page. */
-router.get('/api', function(req, res, next) {
-   res.render('index', { title: name, version: ver, author: auth });
-});
-
 router.get('/', function(req, res, next) {
    /**
     *    TODO:
@@ -20,6 +15,11 @@ router.get('/', function(req, res, next) {
     */
    res.sendFile(path.join(__dirname + '/../views/app/index.html'));
    res.end();
+});
+
+/* GET API page. */
+router.get('/api', function(req, res, next) {
+   res.render('index', { title: name, version: ver, author: auth });
 });
 
 /**
