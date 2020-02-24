@@ -85,9 +85,7 @@ if (!isProduction) {
 }
 
 /**
- *    Database access initiation
- *    ATLAS
- *    mongodb+srv://admin:admin@mongo@db0-sxgcb.mongodb.net/test?retryWrites=true&w=majority
+ *    Database 
  */
 //const dbURL = require('./config/settings/db').local_DB;
 const localDb = 'mongodb://localhost:27017/ghost_kpi_app';
