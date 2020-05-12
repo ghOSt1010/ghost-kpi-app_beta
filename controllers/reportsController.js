@@ -100,6 +100,12 @@ class ReportssController {
          _id: req.params.id
       })
          .then(doc => {
+            try{
+               const Reports = mongoose.model('Reports')
+               Reports.deleteMany({kpi:req.params.id}).exec()
+            }catch(e){
+              res.status(422).json(err);
+            }
             res.status(200).json(doc);
          })
          .catch(err => {
