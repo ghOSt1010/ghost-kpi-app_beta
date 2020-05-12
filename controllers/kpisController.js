@@ -77,7 +77,7 @@ class KPIsController {
       @updated
    */
    static async deleteByID(req, res, err) {
-      await Reports.deleteMany({
+      /*await Reports.deleteMany({
          kpi: req.params.id
       })
          .then(doc => {
@@ -86,7 +86,7 @@ class KPIsController {
          .catch(err => {
             res.status(422).json(err);
          });
-      }
+      }*/
    
       return await KPIs.findOneAndDelete({
          _id: req.params.id
