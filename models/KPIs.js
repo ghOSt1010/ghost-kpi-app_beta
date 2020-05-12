@@ -20,7 +20,7 @@ const KPIsSchema = new Schema({
    }
 });
 
-KPIsSchema.pre('findOneAndDelete',function(next){
+KPIsSchema.pre('remove',function(next){
    const Reports = mongoose.model('Reports')
    Reports.deleteMany({kpi:this._id}).exec()
    next()
