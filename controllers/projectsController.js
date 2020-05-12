@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
 const Projects = mongoose.model('Projects');
+const Employees = mongoose.model('Employees');
 const ProjectService = require('../services/projectService');
 
 class projectsController {
    static async getAll(req, res, err) {
       return await Projects.find()
-         .then(doc => {
+         .then((doc) => {
             res.status(200).json(doc);
          })
-         .catch(err => {
+         .catch((err) => {
             res.status(500).json({ message: err });
          });
       //return res.status(200).json(await Projects.find());
@@ -28,7 +29,7 @@ class projectsController {
 
    static async create(req, res, err) {
       const {
-         body: { project }
+         body: { project },
       } = req;
 
       return res
@@ -38,7 +39,7 @@ class projectsController {
 
    static async update(req, res, err) {
       const {
-         body: { project }
+         body: { project },
       } = req;
 
       Projects.findOneAndUpdate(
@@ -51,22 +52,21 @@ class projectsController {
             }
             return res.status(200).json({
                project: doc,
-               message: 'Updated'
+               message: 'Updated',
             });
          }
       );
    }
 
    static async deleteByID(req, res, err) {
-      return await Projects.findOneAndDelete({
-         _id: req.params.id
-      })
-         .then(doc => {
-            res.status(200).json(doc);
-         })
-         .catch(err => {
-            res.status(422).json(err);
-         });
+      try {
+         let doc = await Projects.findOneAndDelete({
+            _id: req.params.id,
+         }).exec();
+         res.status(200).json(doc);
+      } catch (err) {
+         res.status(422).json(err);
+      }
    }
 }
 module.exports = projectsController;

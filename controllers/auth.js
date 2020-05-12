@@ -79,11 +79,13 @@ exports.login = async (req, res, next) => {
       });
    }
 
+   /*
    var validateUser = await Users.findOne({ email: user.email }).exec();
 
    if (!validateUser.active) {
       return res.status(401).send('User is not activve');
    }
+   */
 
    return passport.authenticate(
       'local',
@@ -98,7 +100,7 @@ exports.login = async (req, res, next) => {
             return res.json({ user: user.toAuthJSON() });
          }
 
-         return status(400).info;
+         return res.status(400).send(info);
       }
    )(req, res, next);
 };
