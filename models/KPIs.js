@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const Reports = require('./Report');
 const { Schema } = mongoose;
 
 const KPIsSchema = new Schema({
@@ -20,22 +20,17 @@ const KPIsSchema = new Schema({
    },
 });
 
-/*
-KPIsSchema.pre('deleteOne', { document: true, query: true }, async function (
+KPIsSchema.pre('remove', { document: true, query: false }, async function (
    next
 ) {
-   // 'this' is the client being removed. Provide callbacks here if you want
-   // to be notified of the calls' result.
    try {
-      const Reports = mongoose.model('Reports');
-      await Reports.deleteMany({ kpi: this._id });
-      //await Reports.deleteMany({ kpi: this._id });
+      let rm_reports = await Reports.deleteMany({ kpi: this._id });
+      console.log(rm_reports);
       next();
    } catch (err) {
       next(err);
    }
 });
-*/
 
 KPIsSchema.plugin(require('mongoose-autopopulate'));
 mongoose.model('KPIs', KPIsSchema);
