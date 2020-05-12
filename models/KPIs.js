@@ -19,5 +19,10 @@ const KPIsSchema = new Schema({
       autopopulate: { maxDepth: 2 }
    }
 });
+
+KPIsSchema.pre('findOneAndDelete',function(next){
+   mongoose.model('Reports').remove({kpi:this._id}).exec()
+   next()
+})
 KPIsSchema.plugin(require('mongoose-autopopulate'));
 mongoose.model('KPIs', KPIsSchema);
