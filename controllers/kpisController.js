@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 //var ObjectId = require('mongoose').Types.ObjectId;
 const KPIs = mongoose.model('KPIs');
-const Reports = mongoose.model('Reports');
+
 //const logger = require('../modules/logger/logger');
 
 class KPIsController {
@@ -77,13 +77,7 @@ class KPIsController {
       @updated
    */
    static async deleteByID(req, res, err) {
-      
-      try{
-         await Reports.deleteMany({kpi: req.params.id}).excec()
-      }catch(e){
-         res.status(422).json(err);
-      }
-      
+     
       return await KPIs.findOneAndDelete({
          _id: req.params.id
       })
